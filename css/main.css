@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* INDEX PRINCIPAL */
 body {
-  background-color: #977028; }
+  background-color: #ccb27f; }
   body h1 {
     margin-bottom: 1rem;
     text-align: center;
@@ -18,7 +19,7 @@ body {
     gap: 10px;
     justify-content: center; }
   body li {
-    background-color: #f2ecec;
+    background-color: #d9cccc;
     width: 100px;
     padding: 0.4rem;
     margin: 0.4rem;
@@ -44,7 +45,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.3fr 1fr 0.5fr;
-  grid-template-areas: "img1" "parrafo2" "img2" "parrafo3" "footer";
+  grid-template-areas: "img1"
+ "parrafo2"
+ "img2"
+ "parrafo3"
+ "footer";
   justify-content: center;
   justify-items: center;
   align-content: center;
@@ -84,21 +89,58 @@ footer {
   footer h2 {
     text-align: center; }
 
+/* INDEX IMAGENES/CONTENIDO */
 @media screen and (min-width: 1024px) {
+  /* media querie index principal */
   .mainIndex {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: none;
-    grid-template-areas: "img1 parrafo2" "img2 parrafo3" "footer footer";
+    grid-template-areas: "img1 parrafo2"
+ "img2 parrafo3"
+ "footer footer";
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center; }
   .img {
     grid-area: img1; }
-  .parrafo2 {
-    grid-area: parrafo2; }
   .img2 {
     grid-area: img2; }
   footer {
     grid-area: footer; } }
+
+    .mainImagenes{
+      display: grid;
+      grid-template-columns: ;
+      grid-template-rows: ;
+      grid-template-areas: "imagen1"
+                           "imagen2"
+                           "imagen3"
+                           "imagen4"
+                           "video1"
+                           "video2"
+                           "footer";
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+  }
+  .imagen1{
+      grid-area: imagen1;
+  }
+  .imagen2{
+      grid-area: imagen2;
+  }
+  .imagen3{
+      grid-area: imagen3;
+  }
+  .imagen4{
+      grid-area: imagen4;
+  }
+  .video1{
+      grid-area: video1;
+  }
+  .video2{
+      grid-area: video2;
+  }
