@@ -35,6 +35,9 @@ body {
   body header a {
     text-decoration: none; }
 
+li:hover {
+  transform: scale(1.2); }
+
 .logo {
   display: none; }
 
@@ -85,24 +88,7 @@ footer {
   footer h2 {
     text-align: center; }
 
-.imagen1 {
-  grid-area: imagen1; }
-
-.imagen2 {
-  grid-area: imagen2; }
-
-.imagen3 {
-  grid-area: imagen3; }
-
-.imagen4 {
-  grid-area: imagen4; }
-
-.video1 {
-  grid-area: video1; }
-
-.video2 {
-  grid-area: video2; }
-
+/* INDEX IMAGENES */
 .mainImagenes {
   display: grid;
   grid-template-columns: auto;
@@ -135,4 +121,24 @@ footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "video1 video2" "footer footer"; } }
+    grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "video1 video2" "footer footer"; }
+    .mainImagenes .imagen1 {
+      grid-area: imagen1;
+      margin-right: 5rem; }
+    .mainImagenes .imagen2 {
+      grid-area: imagen2;
+      margin-left: 5rem; }
+    .mainImagenes .imagen3 {
+      grid-area: imagen3;
+      margin-right: 5rem; }
+    .mainImagenes .imagen4 {
+      grid-area: imagen4;
+      margin-left: 5rem; }
+    .mainImagenes .video1 {
+      grid-area: video1;
+      margin-right: 5rem;
+      margin-top: 5rem; }
+    .mainImagenes .video2 {
+      grid-area: video2;
+      margin-left: 5rem;
+      margin-top: 5rem; } }
